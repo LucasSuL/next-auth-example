@@ -1,15 +1,14 @@
 import "./globals.css"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
-import Footer from "@/components/footer"
 import Header from "@/components/header"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "NextAuth.js Example",
+  title: "Today I Learned",
   description:
-    "This is an example site to demonstrate how to use NextAuth.js for authentication",
+    "This is an website for uploading facts.",
 }
 
 export default function RootLayout({ children }: React.PropsWithChildren) {
@@ -21,7 +20,6 @@ export default function RootLayout({ children }: React.PropsWithChildren) {
           <main className="flex-auto w-full max-w-3xl px-4 py-4 mx-auto sm:px-6 md:py-6">
             {children}
           </main>
-          <Footer />
         </div>
       </body>
     </html>
